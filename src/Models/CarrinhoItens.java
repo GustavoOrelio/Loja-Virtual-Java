@@ -1,42 +1,48 @@
 package Models;
 
 public class CarrinhoItens {
-	
-	private Integer id;
-	private Carrinho cart;
-	private Produto product;
-	private double quantity;
-	private double unit_price;
-	
-	public Integer getId() {
-		return id;
-	}
-	public void setId(Integer id) {
-		this.id = id;
-	}
-	public Carrinho getCart() {
-		return cart;
-	}
-	public void setCart(Carrinho cart) {
-		this.cart = cart;
-	}
-	public Produto getProduct() {
-		return product;
-	}
-	public void setProduct(Produto product) {
-		this.product = product;
-	}
-	public double getQuantity() {
-		return quantity;
-	}
-	public void setQuantity(double quantity) {
-		this.quantity = quantity;
-	}
-	public double getUnit_price() {
-		return unit_price;
-	}
-	public void setUnit_price(double total_price) {
-		this.unit_price = total_price;
-	}
 
+	private Carrinho carrinhoItem;
+	private Produto produto;
+	private double quantidade;
+	private double valorUnitario;
+	
+	public Carrinho getCarrinhoItem() {
+		return carrinhoItem;
+	}
+	public void setCarrinhoItem(Carrinho carrinhoItem) {
+		this.carrinhoItem = carrinhoItem;
+	}
+	public Produto getProduto() {
+		return produto;
+	}
+	public void setProduto(Produto produto) {
+		this.produto = produto;
+	}
+	public double getQuantidade() {
+		return quantidade;
+	}
+	public void setQuantidade(double quantidade) {
+		this.quantidade = quantidade;
+	}
+	public double getValorUnitario() {
+		return valorUnitario;
+	}
+	public void setValorUnitario(double valorUnitario) {
+		this.valorUnitario = valorUnitario;
+	}
+	
+	@Override
+	public String toString() {
+		return "Produto" + produto.getName() 
+		+ "Carrinho:" + carrinhoItem.getCliente() 
+		+ "Quantidade:" + getQuantidade() 
+		+ "Valor Unitario:" + getValorUnitario()
+		+ "Produto:" + getProduto();
+	}
+	
+	
+	
+	
+	
 }

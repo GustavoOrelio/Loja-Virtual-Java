@@ -1,29 +1,33 @@
 package Views;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import javax.swing.JOptionPane;
+
 import Controllers.CarrinhoController;
 import Models.Carrinho;
-import Models.Cliente;
 import Models.Produto;
 
 public class TesteCarrinho {
-	
-	public static void main (String args[]) {
-		Cliente client = new Cliente();
-		client.setCpf("99999999999");
-		client.setName("Gustavo");
-		
-		Produto product = new Produto();
-		product.setName("Teclado");
-		product.setPrice(100.99);
-		product.setStorage(10);
-		
-		Carrinho cart = new Carrinho();
-		cart.setClient(client);
-		
-		CarrinhoController cartController = new CarrinhoController();
-		cartController.addItem(cart, product, 33.99, 2);
-		
-		System.out.println(cartController);
-	}
 
+	public static void main (String args[]) throws ParseException{
+		cadastroItemCarrinho();
+	}
+	
+	public static void cadastroItemCarrinho() {
+		
+		Carrinho carrinho = new Carrinho();
+		carrinho.getCliente().getName();
+		
+		
+		CarrinhoController controleCarrinho = new CarrinhoController();
+		Double quantidade = Double.parseDouble(JOptionPane.showInputDialog("Informe a quantidade de produto que será adiconada:"));
+		Double valorUnitario = Double.parseDouble(JOptionPane.showInputDialog("Informe o valor unitario:"));
+		
+		controleCarrinho.addItem(carrinho, produto, quantidade, valorUnitario);
+		
+		System.out.println(controleCarrinho);
+	}
 }
