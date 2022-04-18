@@ -25,10 +25,18 @@ public class App {
 			case 3:
 				menu.carrinho();
 				break;
+			case 4:
+				menu.cadastrarCompra();
+				break;
 			case 5:
 				menu.imprimirCliente();
 				break;
-			
+			case 6:
+				menu.extratoCompra();
+				break;
+			case 7:
+				menu.removerCliente();
+				break;
 			case 10:
 				menu.exibirMenu();
 				break;

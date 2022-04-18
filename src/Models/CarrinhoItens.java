@@ -2,11 +2,18 @@ package Models;
 
 public class CarrinhoItens {
 
+	private Integer id;
 	private Carrinho carrinhoItem;
 	private Produto produto;
 	private double quantidade;
 	private double valorUnitario;
 	
+	public Integer getId() {
+		return id;
+	}
+	public void setId(Integer id) {
+		this.id = id;
+	}
 	public Carrinho getCarrinhoItem() {
 		return carrinhoItem;
 	}
