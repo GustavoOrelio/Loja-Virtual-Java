@@ -12,6 +12,8 @@ import Models.Produto;
 
 public class TesteCarrinho {
 
+	private static Produto produto;
+
 	public static void main (String args[]) throws ParseException{
 		cadastroItemCarrinho();
 	}
@@ -19,7 +21,7 @@ public class TesteCarrinho {
 	public static void cadastroItemCarrinho() {
 		
 		Carrinho carrinho = new Carrinho();
-		carrinho.getCliente().getName();
+		carrinho.getCliente().getNome();
 		
 		
 		CarrinhoController controleCarrinho = new CarrinhoController();

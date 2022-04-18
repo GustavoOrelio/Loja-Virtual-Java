@@ -30,10 +30,10 @@ public class CarrinhoController {
 		int i;
 		String data = "";
 		for(i=0; i < ItensCarrinho.size() ; i++) {
-			data = "Produto: \n" + ItensCarrinho.get(i).getProduto().getName()
+			data = "Produto: \n" + ItensCarrinho.get(i).getProduto().getNome()
 			+ "\nQuantidade: \n" + ItensCarrinho.get(i).getQuantidade()
 			+ "\nValor Unitario: \n" + ItensCarrinho.get(i).getValorUnitario()
-			+ " \nUsuario: \n" + ItensCarrinho.get(i).getCarrinhoItem().getCliente().getName();
+			+ " \nUsuario: \n" + ItensCarrinho.get(i).getCarrinhoItem().getCliente().getNome();
 		} return data;
 	}
 

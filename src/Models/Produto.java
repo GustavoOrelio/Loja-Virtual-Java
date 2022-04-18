@@ -3,9 +3,9 @@ package Models;
 public class Produto {
 	
 	private Integer id;
-	private String name;
-	private double price;
-	private int storage;
+	private String nome;
+	private double preco;
+	private int estoque;
 	
 	public Integer getId() {
 		return id;
@@ -13,23 +13,25 @@ public class Produto {
 	public void setId(Integer id) {
 		this.id = id;
 	}
-	public String getName() {
-		return name;
+	public String getNome() {
+		return nome;
 	}
-	public void setName(String name) {
-		this.name = name;
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
-	public double getPrice() {
-		return price;
+	public double getPreco() {
+		return preco;
 	}
-	public void setPrice(double price) {
-		this.price = price;
+	public void setPreco(double preco) {
+		this.preco = preco;
 	}
-	public int getStorage() {
-		return storage;
+	public int getEstoque() {
+		return estoque;
 	}
-	public void setStorage(int storage) {
-		this.storage = storage;
+	public void setEstoque(int estoque) {
+		this.estoque = estoque;
 	}
+	
+	
 
 }

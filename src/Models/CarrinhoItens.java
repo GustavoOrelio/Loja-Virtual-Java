@@ -34,7 +34,7 @@ public class CarrinhoItens {
 	
 	@Override
 	public String toString() {
-		return "Produto" + produto.getName() 
+		return "Produto" + produto.getNome()
 		+ "Carrinho:" + carrinhoItem.getCliente() 
 		+ "Quantidade:" + getQuantidade() 
 		+ "Valor Unitario:" + getValorUnitario()

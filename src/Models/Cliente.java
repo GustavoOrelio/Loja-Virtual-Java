@@ -5,12 +5,11 @@ import java.util.Date;
 public class Cliente {
 	
 	private Integer id;
-	private String name;
-	private Date dt_nasc;
+	private String nome;
+	private String dt_nasc;
 	private String cpf;
-	private String address;
-	private int mobile_phone;
-	
+	private String endereco;
+	private String telefone;
 	
 	public Integer getId() {
 		return id;
@@ -18,16 +17,16 @@ public class Cliente {
 	public void setId(Integer id) {
 		this.id = id;
 	}
-	public String getName() {
-		return name;
+	public String getNome() {
+		return nome;
 	}
-	public void setName(String name) {
-		this.name = name;
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
-	public Date getDt_nasc() {
+	public String getDt_nasc() {
 		return dt_nasc;
 	}
-	public void setDt_nasc(Date dt_nasc) {
+	public void setDt_nasc(String dt_nasc) {
 		this.dt_nasc = dt_nasc;
 	}
 	public String getCpf() {
@@ -36,17 +35,23 @@ public class Cliente {
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
 	}
-	public String getAddress() {
-		return address;
+	public String getEndereco() {
+		return endereco;
 	}
-	public void setAddress(String address) {
-		this.address = address;
+	public void setEndereco(String endereco) {
+		this.endereco = endereco;
 	}
-	public int getMobile_phone() {
-		return mobile_phone;
+	public String getTelefone() {
+		return telefone;
 	}
-	public void setMobile_phone(int mobile_phone) {
-		this.mobile_phone = mobile_phone;
+	public void setTelefone(String telefone) {
+		this.telefone = telefone;
 	}
+	
+	
+	
+	
+	
+	
 
 }
